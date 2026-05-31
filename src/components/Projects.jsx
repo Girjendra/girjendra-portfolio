@@ -1,14 +1,6 @@
 function Projects() {
   const projects = [
     {
-      title: "Diabetes Predictor App",
-      image: "/projects/diabetes.png",
-      tech: "Python • Scikit-Learn • Streamlit",
-      description:
-        "Machine Learning application that predicts diabetes risk based on health parameters.",
-      github: "https://github.com/Girjendra/diabetes-predictor-app",
-    },
-    {
       title: "Grid O-X App",
       image: "/projects/gridox-win.png",
       tech: "Java • Android Studio • XML",
@@ -25,22 +17,23 @@ function Projects() {
       github: "https://github.com/Girjendra/mathmaster-kids",
     },
     {
-      title: "Web Chess App",
-      image: "/projects/chess-placeholder.png",
-      tech: "Flask • Python • HTML/CSS",
-      description:
-        "Web-based chess application with move validation and game-state tracking.",
-      github: "https://github.com/Girjendra/web-chess-app",
-    },
-    {
       title: "Diabetes Prediction System",
-      image: "/projects/diabetes_sys.png",
+      image: "/projects/diabetes.png",
       tech: "Streamlit • Python • NumPy • Pandas • Scikit-learn",
       description:
-        "Machine learning web application that predicts diabetes risk using patient health parameters.",
+      "Machine learning web application that predicts diabetes risk using patient health parameters.",
       github: "https://github.com/Girjendra/diabetes-predictor-app",
+      live: "https://diabetes-predictor-app-wy6kpkff4x97b5g4xzoszd.streamlit.app/?",
     },
-
+    {
+      title: "Chess Game",
+      image: "/projects/play_chess.png",
+      tech: "Python • Flask • HTML • CSS • JavaScript",
+      description:
+      "Fully playable web-based chess game built using Flask, HTML, CSS, and JavaScript. Supports legal chess moves, sound effects, and mute/unmute functionality.",
+      github: "https://github.com/Girjendra/web-chess-app",
+      live: "https://chess-game-hblq.onrender.com",
+    },
   ];
 
   return (
@@ -87,15 +80,27 @@ function Projects() {
                   {project.description}
                 </p>
 
-                <a
+                <div className="mt-auto flex gap-3">
+                  <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center border border-cyan-400 px-5 py-3 rounded-lg mt-auto hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300"
-                    >
+                    className="flex-1 text-center border border-cyan-400 px-5 py-3 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300"
+                  >
                     View Project
-                </a>
+                  </a>
 
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 text-center bg-cyan-400 text-black px-5 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition-all duration-300"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
