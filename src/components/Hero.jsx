@@ -25,7 +25,7 @@ function Hero() {
           </p>
 
           <p className="text-slate-300 text-lg mb-8">
-            B.Tech CSE (AI/ML) • JIET Guna
+            B.Tech CSE (AI/ML) • JUET Guna
           </p>
 
           <div className="flex flex-wrap gap-4">
