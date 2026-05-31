@@ -32,6 +32,15 @@ function Projects() {
         "Web-based chess application with move validation and game-state tracking.",
       github: "https://github.com/Girjendra/web-chess-app",
     },
+    {
+      title: "Diabetes Prediction System",
+      image: "/projects/diabetes_sys.png",
+      tech: "Streamlit • Python • NumPy • Pandas • Scikit-learn",
+      description:
+        "Machine learning web application that predicts diabetes risk using patient health parameters.",
+      github: "https://github.com/Girjendra/diabetes-predictor-app",
+    },
+
   ];
 
   return (
