@@ -125,7 +125,7 @@ function Hero() {
             >
               <h3 className="text-4xl font-bold text-cyan-400"></h3>
               <div className="text-center">
-                <h3 className="text-4xl font-bold text-cyan-400 mb-4">
+                <h3 className="text-3xl font-bold text-cyan-400 mb-4">
                   IIITDM
                 </h3>
 
